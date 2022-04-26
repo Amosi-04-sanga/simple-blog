@@ -8,18 +8,18 @@ const Nav = () => {
             <ul className={styles.list}>
                 <li className={styles.item} >
                     <Link href="/" >
-                        {"Home"}
+                        <a>Home</a>
                     </Link>
                 </li>
                 <li className={styles.item} >
                     <Link href="/add-post" >
-                        {"add post"}
+                    <a>Add post</a>
                     </Link>
                 </li>
                 
                 <li className={styles.item} >
                     <Link href="/contacts" >
-                        {"contacts"}
+                    <a>Contacts</a>
                     </Link>
                 </li>
             </ul>
