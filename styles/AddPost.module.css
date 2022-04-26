@@ -11,9 +11,9 @@
     padding: 1rem .4rem 1rem 2rem;
 }
 
-@media screen and (max-width: 420px ) {
+@media screen and (max-width: 520px ) {
     .form {
-        width: 75vw;
+        width: 85vw;
         padding: 1rem .4rem 2rem;
     }
 }
