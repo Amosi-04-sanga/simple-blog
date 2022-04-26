@@ -1,0 +1,44 @@
+.card {
+    padding: .7rem;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 10rem;
+    max-width: 20rem;
+    box-shadow: 0 0 4px 0 rgb(219, 204, 204);
+    padding: 1rem;
+    margin: .5rem auto;
+}
+
+@media screen and (max-width: 350px ) {
+    .card {
+        width: 75vw;
+    }
+}
+
+.content {
+    text-transform: lowercase;
+}
+
+.title {
+    margin: 1rem 0;
+}
+
+.date {
+    margin: .8rem 0;
+    display: block;
+    color: green;
+}
+
+.buttons button {
+   padding: .4rem .5rem;
+   border: none;
+   outline: none;
+   background-color: rgb(164, 237, 204);
+   margin-right: .4rem;
+   cursor: pointer;
+   transition: all 200ms ease-in-out;
+}
+
+.buttons button:hover {
+    background-color: rgb(123, 212, 212);
+}

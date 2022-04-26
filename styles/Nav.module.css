@@ -1,0 +1,35 @@
+.nav {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 3px 0 rgb(158, 153, 153);
+  background-color: aliceblue;
+  position: sticky;
+  top: 0;
+  z-index: 11;
+}
+
+.logo {
+  display: block;
+  width: 20vw;
+  line-height: 10vh;
+  text-align: center;
+  font-weight: 900;
+  text-transform: capitalize;
+  font-family: cursive;
+}
+
+.list {
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.item {
+   list-style-type: none;
+   margin-right: .7rem;
+   text-transform: capitalize;
+}
+
+
