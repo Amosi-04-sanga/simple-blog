@@ -16,11 +16,7 @@ const Nav = () => {
                         {"add post"}
                     </Link>
                 </li>
-                <li className={styles.item} >
-                    <Link href="/about" >
-                        {"about"}
-                    </Link>
-                </li>
+                
                 <li className={styles.item} >
                     <Link href="/contacts" >
                         {"contacts"}
