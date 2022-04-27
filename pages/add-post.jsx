@@ -10,6 +10,7 @@ const AddPost = () => {
   const contentType = 'application/json'
   const [error, setError] = useState("")
   const [isfocus, setIsfocus] = useState(false)
+  const [issaving, setIssaving] = useState(false)
   const [data, setData] = useState({
       title: "",
       content: "",
@@ -22,7 +23,7 @@ const AddPost = () => {
 
 
     if(title || content) {
-      
+         issaving(true)
          await axios.post( "/api/blogPosts", data )
          .then( res => {
            setData({
@@ -30,6 +31,7 @@ const AddPost = () => {
              content: ""
            })
            Router.push("/")
+           issaving(false)
          })
 
     } 
@@ -96,7 +98,7 @@ const AddPost = () => {
               </div>
 
                <div className={styles.row}>
-                 <button className={styles.btn} type='submit' >add post</button>
+                 <button className={styles.btn} type='submit' > { issaving ? "saving..." : "add post" } </button>
                </div>
 
            </form>
