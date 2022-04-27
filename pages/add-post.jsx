@@ -24,12 +24,13 @@ const AddPost = () => {
     if(title || content) {
       
          await axios.post( "/api/blogPosts", data )
-       
-          setData({
-            title: "",
-            content: ""
-          })
-          Router.push("/")
+         .then( res => {
+           setData({
+             title: "",
+             content: ""
+           })
+           Router.push("/")
+         })
 
     } 
     else {
